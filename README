@@ -1,0 +1,41 @@
+Basic e-commerce system in Java, we will use Spring Boot as the main framework. The project will include basic features such as:
+Product CRUD: Add, view, update and remove products.
+Shopping Cart: Add and remove products from the cart.
+Order Processing: Create and manage orders.
+Database: We will use H2 (in-memory) for data storage, but it is possible to change to a more robust database, such as MySQL or PostgreSQL.
+Project Structure
+Product: Class that represents the products in e-commerce.
+Order: Class that represents the orders made by customers.
+Cart: Class that represents the shopping cart.
+Repositories: To manage the persistence of products and orders.
+Controllers: To manage HTTP requests.
+Templates: We will use Thymeleaf for the HTML pages.
+Steps to Create the Project
+Create the Project with Spring Boot:
+
+Use Spring Initializr to generate the project with the dependencies:
+Spring Web
+Spring Data JPA
+H2 Database
+Thymeleaf
+Package Structure:
+
+com.example.ecommerce (main package)
+controller (for controllers)
+model (for Product, Order, Cart classes)
+repository (for repositories)
+
+Code Explanation
+Product: Class that represents products in e-commerce.
+
+Order: Class that represents orders, containing a list of products and the total order value.
+
+Cart: Class that represents the shopping cart, where users can add and remove products before finalizing the purchase.
+
+Repositories: Interfaces that allow CRUD operations to be performed on products and orders.
+
+Controllers: Manage routes and actions for products, orders, and the shopping cart.
+
+Thymeleaf Templates: Used to render the user interface.
+
+H2 Database: Used to store data during development.
